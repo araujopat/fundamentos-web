@@ -10,7 +10,7 @@ por Seletor: querySelector()
 let nome = window.document.getElementById('nome')
 let email = document.querySelector('#email')
 let assunto = document.querySelector('#assunto')
-let mapa = document.querySelector('#mapa')
+let mapa = document.querySelector('#iframe-mapa')
 let nomeOk = false
 let emailOk = false
 let assuntoOk = false
