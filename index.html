@@ -60,33 +60,41 @@
         
     </div>
 
-    <div class="mapa mb-50">
-        <div>
-            <h2 class="center">Lofi que eu uso para estudar </h2>
-        <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/78mYkbfsXRM" 
-        title="YouTube video player" 
-        frameborder="10" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
-
-        </div>
-        <div class="ml-50">
-
-            <h2 class="center">Um dos Lugares que quero visitar</h2>
-            <p> Av Monte Verde 636</p>
-            <p>Minas Gerais</p> 
-            
+    <div class="iframes-container mb-50" style='width: 100%'>
+        
+        
+        <div class="flex-column-center" style='width: 100%'>
+            <div style='width: 560px;'  class="flex-column-center">
+                <h2 class="center">Lofi que eu uso para estudar </h2>
+            </div>
             <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.30868926793!2d-46.04262242769813!3d-22.865052534423075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b2641bc59038b1f!2sF%C3%A1brica%20de%20Chocolate%20Gressoney!5e0!3m2!1spt-BR!2sbr!4v1621392371868!5m2!1spt-BR!2sbr" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
+                id='iframe-video'
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/78mYkbfsXRM" 
+                title="YouTube video player" 
+                frameborder="10" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="flex-column-center" style='width: 100%'>
+            <div style='width: 560px;'  class="flex-column-center">
+                <h2>Um dos Lugares que quero visitar</h2>
+                <p> Av Monte Verde 636</p>
+                <p>Minas Gerais</p> 
+            </div>  
+            <iframe 
+                id='iframe-mapa'
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.30868926793!2d-46.04262242769813!3d-22.865052534423075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b2641bc59038b1f!2sF%C3%A1brica%20de%20Chocolate%20Gressoney!5e0!3m2!1spt-BR!2sbr!4v1621392371868!5m2!1spt-BR!2sbr" 
+                width="560" 
+                height="315" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                onmousemove="mapaZoomIn()"
+                onmouseout="mapaZoomOut()">
             </iframe>
         </div>
         
@@ -101,6 +109,7 @@
            
         </div>
         Todos os direitos reservado: Patricia Araújo &copy
+        <script src="assets/js/script.js"></script>
     </footer>
 
 </body>

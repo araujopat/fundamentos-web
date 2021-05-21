@@ -10,6 +10,7 @@ por Seletor: querySelector()
 let nome = window.document.getElementById('nome')
 let email = document.querySelector('input#email')
 let assunto = document.querySelector('#assunto')
+let mapa = document.querySelector('#iframe-mapa')
 
 nome.style.width = '100%'
 email.style.width = '100%'
@@ -61,3 +62,14 @@ function enviar() {
     }
 }
     
+
+function mapaZoomIn() {
+    mapa.style.width = '1260px'
+    mapa.style.height = '450px'
+}
+
+function mapaZoomOut() {
+    mapa.style.width = '560px'
+    mapa.style.height = '315px'
+    
+}
