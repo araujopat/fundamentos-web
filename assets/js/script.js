@@ -8,21 +8,27 @@ por Seletor: querySelector()
 */
 
 let nome = window.document.getElementById('nome')
-let email = document.querySelector('input#email')
+let email = document.querySelector('#email')
 let assunto = document.querySelector('#assunto')
-let mapa = document.querySelector('#iframe-mapa')
+let mapa = document.querySelector('#mapa')
+let nomeOk = false
+let emailOk = false
+let assuntoOk = false
+
 
 nome.style.width = '100%'
 email.style.width = '100%'
 
 function validaNome() {
-    let txt = document.querySelector ('#txtNome')
+    let txtNome = document.querySelector ('#txtNome')
+
     if(nome.value.length < 3) {
         txtNome.innerHTML = 'Nome invalido'
         txtNome.style.color = 'red'
     } else {
         txtNome.innerHTML = 'Nome Valido'
         txtNome.style.color = 'green'
+        nomeOk = true
     }
 }
 
@@ -35,6 +41,7 @@ function validaEmail() {
     } else {
         txtEmail.innerHTML = 'E-mail Valido'
         txtEmail.style.color = 'green'
+        emailOk = true
     }
 }
     
