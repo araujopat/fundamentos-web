@@ -1,6 +1,11 @@
 /* Estilos da página index.html */
+.back {
+    background-color:lightcyan;
+    font-family: "Lucida Handwriting", "cursive";
+}
  .center{
      text-align: center;
+     font-family: "Lucida Handwriting", "cursive";
  }
  .justify{
      text-align: justify;
