@@ -39,20 +39,18 @@ function validaEmail() {
     
 function validaAssunto() {
     
-    alert(assunto)
+    let txtAssunto = document.querySelector('#txtAssunto')
     
-    /*let txtAssunto = document.querySelector('#txtAssunto')*/
-    
-    /*if (assunto.value.length >= 100) {
-        alert ('entrou no else')
-        /*txtAssunto.innerHTML = 'Texto é muito grande, digite no máximo 100 caracteres'
+    if (assunto.value.length >= 100) {
+        
+        txtAssunto.innerHTML = 'Texto é muito grande, digite no máximo 100 caracteres'
         txtAssunto.style.color = 'red'
         txtAssunto.style.display = 'block'
     } else {
-        /*txtAssunto.style.display = 'none'
-        assuntoOk = true
-        alert ('entrou no else')
-    }*/
+        
+        txtAssunto.style.display = 'none'
+        assuntoOk = true        
+    }
 }
          
 function enviar() {
